@@ -1,5 +1,7 @@
 {% extends "base.html" %}
 {% block content %}
+{% include "header.html" %}
+<article>
 <h1>Archives for {{ SITENAME }}</h1>
 
 <dl>
@@ -8,4 +10,5 @@
     <dd><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></dd>
 {% endfor %}
 </dl>
+</article>
 {% endblock %}

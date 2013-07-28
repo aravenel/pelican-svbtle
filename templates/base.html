@@ -49,6 +49,10 @@
 				{% for name, link in LINKS %}
 					<li><a href="{{ link }}">{{ name }}</a></li>
 				{% endfor %}
+                <br /><br />
+                {% for name, link in SOCIAL %}
+					<li><a href="{{ link }}">{{ name }}</a></li>
+                {% endfor %}
 			</ul>
 		</div>
 		<footer>
